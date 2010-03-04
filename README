@@ -38,14 +38,14 @@ Examples:
    }
 
    // Basic PageAble Form
-   class Zend_Form_Demo extends Myself_Form_PageAble
+   class Myself_Form_Example extends Myself_Form_PageAble
   {
   		
-  		public function createForm(){
+  	public function createForm(){
   		
-  			$form = new Myself_Form_Page();
-  			// Add some more Pages
-  			$this->addPages(array('erste' => $form));
+  	$form = new Myself_Form_Page();
+  	// Add some more Pages
+  	$this->addPages(array('erste' => $form));
   		
-  		}
+  	}
   }
