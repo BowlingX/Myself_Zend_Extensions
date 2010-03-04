@@ -10,7 +10,7 @@ Examples:
 
 
 	// Basic Multiple Form Controller
-	class MyController extends Myself_Form_Page_Abstract
+   class MyController extends Myself_Form_Page_Controller
     {
 	
   	public function getForm ()
