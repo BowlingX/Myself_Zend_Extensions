@@ -1,13 +1,19 @@
 Myself_Lib (c) 2010 David Heidrich
+
+Myself_Lib is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
 Extending Zend Framework
 
 Collection of some usefull components
 
 1. Myself_Form
-	A multipage form controller
+	A multipage form controller, uses Zend_Form subforms to create multiple Pages
+	See also: http://framework.zend.com/manual/en/zend.form.advanced.html
 	
 Examples:
-
 
 	// Basic Multiple Form Controller
    class MyController extends Myself_Form_Page_Controller
