@@ -1,0 +1,45 @@
+Myself_Lib (c) 2010 David Heidrich
+Extending Zend Framework
+
+Collection of some usefull components
+
+1. Myself_Form
+	A multipage form controller
+	
+Examples:
+
+
+	// Basic Multiple Form Controller
+	class MyController extends Myself_Form_Page_Abstract
+    {
+	
+  	public function getForm ()
+	{
+	       if (null === $this->_form) {
+	           $this->_form = new Myself_Form_Example();
+	       }
+	       return $this->_form;
+	   }
+	
+ 	function handleData(Myself_Form_PageAble $form){
+	       var_dump($form->getValues());       
+	        return $this->_forward('complete');
+	}
+	    
+	   public function completeAction(){
+	        
+	    }
+   }
+
+   // Basic PageAble Form
+   class Zend_Form_Demo extends Myself_Form_PageAble
+  {
+  		
+  		public function createForm(){
+  		
+  			$form = new Myself_Form_Page();
+  			// Add some more Pages
+  			$this->addPages(array('erste' => $form));
+  		
+  		}
+  }
